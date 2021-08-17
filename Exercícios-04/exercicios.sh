@@ -10,5 +10,9 @@ echo "Qual a extensão dos arquivos?: "
 read e1
 for i in $(seq $n1)
 do
-touch $i.py
+touch $i.$e1
 done
+
+echo "###############################"
+echo "      Arquivos Criados         "
+echo "###############################"
