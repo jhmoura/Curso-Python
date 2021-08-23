@@ -16,17 +16,17 @@ else:
 
 #Adicionando um Banner
 print("-"*50)
-print("Scaneando o alvo" + target)
+print("Scaneando o alvo " + target)
 print("Time started: "+str(datetime.now()))
 print("-"*50)
 
 try:
-    for port in range(50,85):
+    for port in range(1,60000):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         socket.setdefaulttimeout(1)
         result =s.connect_ex((target, port))
         if result == 0:
-            print(f"Porta {port} is open")
+            print(f"Porta {port} está a berta")
         s.close()
 
 except KeyboardInterrupt:
