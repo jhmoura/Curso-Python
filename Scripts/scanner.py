@@ -9,7 +9,7 @@ from datetime import datetime
 
 #Definir o alvo
 
-if len(sys.agrv) == 2:
+if len(sys.argv) == 2:
     target = socket.gethostbyname(sys.argv[1]) #Traduz o hostname para IPv4
 else:
     print("Argumentos inválidos")
