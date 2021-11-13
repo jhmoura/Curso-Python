@@ -1,9 +1,11 @@
-v1 = []
-v2 = []
+vt1 = []
+vt2 = []
+for num in range(10):
+    vt1.append(int(input(f"Digite o número de posiçao {num+1}: ")))
 
-for i in range(10):
-    v1.append(int(input("Digite um número real: ")))
-    v2.append((v1[i]**2))
+print(vt1)
+for num2 in range(len(vt1)):
+    vt2.append((vt1[num2]**2))
 
-print(v1)
-print(v2)
+print(vt1)
+print(vt2)
